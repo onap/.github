@@ -4,11 +4,11 @@ project_creation_date: "2023-07-12"
 lifecycle_state: "Incubation"
 project_category: ""
 project_lead: &onap_releng_ptl
-  name: "Jessica Wagantall"
+  name: "Jessica G"
   email: "jwagantall@linuxfoundation.org"
   id: "jwagantall"
   company: "LF"
-  timezone: "America/Los_Angeles"
+  timezone: ""
 primary_contact: *onap_releng_ptl
 issue_tracking:
   type: "jira"
