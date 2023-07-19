@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1345175_5b5a82e3",
+        "filename": ".github/workflows/gerrit-required-info-yaml-verify.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-07-19T16:54:30Z",
+      "side": 1,
+      "message": "This should not be part of the workflow_dispatch! It\u0027s part of the reusable workflow itself, but not something that Gerrit will _ever_ pass into a job",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 24
+      },
+      "revId": "7c388764270368b02959c0d16d07da0432c0fa01",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
