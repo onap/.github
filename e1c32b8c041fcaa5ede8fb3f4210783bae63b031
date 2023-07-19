@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "e1c32b8c041fcaa5ede8fb3f4210783bae63b031",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e03e566_eceb80b5",
+        "filename": "gerrit-required-info-yaml-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-07-19T16:05:03Z",
+      "side": 1,
+      "message": "add an additional with of:\n\ncomment-only: true\n\nThere is a PR (#14) open, which once merged, will make it so we can turn this on in an advisory configuration so that we can make sure that we have a good job first.",
+      "revId": "e1c32b8c041fcaa5ede8fb3f4210783bae63b031",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
