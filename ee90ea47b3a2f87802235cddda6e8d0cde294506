@@ -16,6 +16,24 @@
       "message": "The workflow file needs to live in the `$ROOT/.github/workflows` directory, not in `$ROOT/workflows` directory",
       "revId": "ee90ea47b3a2f87802235cddda6e8d0cde294506",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3bcc673_444ca850",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-07-19T16:39:14Z",
+      "side": 1,
+      "message": "ohhh i see.. i thought the .github repo was acting as the repo\u0027s .github folder.. \n\nupdated.",
+      "parentUuid": "0f910f48_bc4173a2",
+      "revId": "ee90ea47b3a2f87802235cddda6e8d0cde294506",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
