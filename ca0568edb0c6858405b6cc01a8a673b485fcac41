@@ -1,0 +1,7 @@
+Code-Review+2: Kevin Sandi <ksandi@contractor.linuxfoundation.org>
+Verified+1: ONAP Jobbuilder <onap-jobbuilder@jenkins.onap.org>
+Submitted-by: Andrew Grimberg <agrimberg@linuxfoundation.org>
+Submitted-at: Wed, 19 Jul 2023 16:15:55 +0000
+Reviewed-on: https://gerrit.onap.org/r/c/.github/+/135511
+Project: .github
+Branch: refs/heads/master
