@@ -16,6 +16,24 @@
       "message": "No need to set this to false, just remove it.",
       "revId": "03df90562cd88cf4a8218476763796924ca662b2",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd81e61b_1f4ef751",
+        "filename": ".github/workflows/gerrit-required-info-yaml-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-07-20T21:19:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8edbae6d_2d1e6e1e",
+      "revId": "03df90562cd88cf4a8218476763796924ca662b2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
