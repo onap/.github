@@ -18,6 +18,24 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3077998a_c53b001f",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-01T23:12:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4dc2db13_c4af3c98",
+      "revId": "edf9b213f86d1bd19b88e97600d0834d20fe01b3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "06016538_b04060ea",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-08-01T21:10:19Z",
       "side": 1,
       "message": "This doesn\u0027t cause the job to exit, just the step. Further steps are still going to run even though they aren\u0027t supposed to at this point if there isn\u0027t a docs directory.\n\nYou need to set an environment variable which is then evaluated in further steps with an `if:` clause for guard",
+      "revId": "edf9b213f86d1bd19b88e97600d0834d20fe01b3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "361d5477_d9870c20",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-01T23:12:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "06016538_b04060ea",
       "revId": "edf9b213f86d1bd19b88e97600d0834d20fe01b3",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
