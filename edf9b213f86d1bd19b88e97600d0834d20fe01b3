@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4dc2db13_c4af3c98",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-01T21:10:19Z",
+      "side": 1,
+      "message": "This probably needs to be changed to \u0027gerrit-required-doc-rules-verify.yaml\u0027 given that it\u0027s in the .github repo",
+      "revId": "edf9b213f86d1bd19b88e97600d0834d20fe01b3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "06016538_b04060ea",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-01T21:10:19Z",
+      "side": 1,
+      "message": "This doesn\u0027t cause the job to exit, just the step. Further steps are still going to run even though they aren\u0027t supposed to at this point if there isn\u0027t a docs directory.\n\nYou need to set an environment variable which is then evaluated in further steps with an `if:` clause for guard",
+      "revId": "edf9b213f86d1bd19b88e97600d0834d20fe01b3",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}

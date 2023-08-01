@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57dffa7e_713e32eb",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-01T21:10:19Z",
+      "side": 1,
+      "message": "Version 0.4",
+      "range": {
+        "startLine": 55,
+        "startChar": 43,
+        "endLine": 55,
+        "endChar": 44
+      },
+      "revId": "1a6718c6a1a2457c271be1ec48fedf87ae4b4cf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c1c2abe_d67a3d30",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-01T21:10:19Z",
+      "side": 1,
+      "message": "Add \u0027comment-only: true\u0027 You can\u0027t have more than 1 voting verify of a given type (standard or required)",
+      "revId": "1a6718c6a1a2457c271be1ec48fedf87ae4b4cf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "894b2f09_26aa4f80",
+        "filename": ".github/workflows/gerrit-doc-rules-verify.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-01T21:10:19Z",
+      "side": 1,
+      "message": "We\u0027re at version 0.4 now",
+      "range": {
+        "startLine": 71,
+        "startChar": 52,
+        "endLine": 71,
+        "endChar": 53
+      },
+      "revId": "1a6718c6a1a2457c271be1ec48fedf87ae4b4cf1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
