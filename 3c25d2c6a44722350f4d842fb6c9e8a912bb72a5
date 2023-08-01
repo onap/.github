@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76496b97_6d4bc570",
+        "filename": ".github/workflows/gerrit-required-doc-rules-verify.yaml",
+        "patchSetId": 12
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-01T23:13:39Z",
+      "side": 1,
+      "message": "@Andy, actually while reviewing the code.. I am wondering if this will cause the variable to behave as a string and not a bool. Is this correct?",
+      "range": {
+        "startLine": 103,
+        "startChar": 12,
+        "endLine": 103,
+        "endChar": 52
+      },
+      "revId": "3c25d2c6a44722350f4d842fb6c9e8a912bb72a5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
