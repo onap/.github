@@ -105,6 +105,7 @@ jobs:
       - name: Checking docs directory
         run: |
           # docs directory
+          . /lib/lsb/init-functions || exit 0
           if [ ! -d docs ] ; then
             log_success_msg "INFO Directory docs not found. Skipping further checks."
             echo "DOCS_FOUND=false" >> "$GITHUB_ENV"
@@ -113,6 +114,7 @@ jobs:
         if: ${{ env.DOCS_FOUND == 'true' }}
         run: |
           # config files, required
+          . /lib/lsb/init-functions || exit 0
           for i in docs/index.rst docs/conf.py docs/requirements-docs.txt docs/_static/css/ribbon.css .readthedocs.yaml; do
             if [ ! -f $i ] ; then
               log_failure_msg "FAIL $i missing. Please add it or remove the full docs directory."
@@ -135,6 +137,7 @@ jobs:
         if: ${{ env.DOCS_FOUND == 'true' }}
         run: |
           # tox.ini @ docs directory
+          . /lib/lsb/init-functions || exit 0
           filename="docs/tox.ini"
           if [ ! -f $filename ] ; then
             log_failure_msg "FAIL $filename missing. Please add it or remove the full docs directory."
@@ -184,6 +187,7 @@ jobs:
         if: ${{ env.DOCS_FOUND == 'true' }}
         run: |
           # ribbon.css
+          . /lib/lsb/init-functions || exit 0
           filename="docs/_static/css/ribbon.css"
           if [ ! -f $filename ]; then
             log_failure_msg "FAIL $filename missing. Please add it or remove the full docs directory."
@@ -205,6 +209,7 @@ jobs:
         if: ${{ env.DOCS_FOUND == 'true' }}
         run: |
           # readthedocs.yaml
+          . /lib/lsb/init-functions || exit 0
           filename=".readthedocs.yaml"
           if [ ! -f $filename ]; then
             log_failure_msg "FAIL $filename missing. Please add it or remove the full docs directory."
@@ -262,6 +267,7 @@ jobs:
         if: ${{ env.DOCS_FOUND == 'true' }}
         run: |
           # message, end
+          . /lib/lsb/init-functions || exit 0
           if [ "${{ env.exitstatus }}" = "0" ]; then
             if [ "${{ env.warning }}" = "0" ]; then
               log_success_msg "INFO Congratulations! No documentation problem(s) detected."
