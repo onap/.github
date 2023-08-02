@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa3b9f80_aa7e3a65",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-02T20:17:32Z",
+      "side": 1,
+      "message": "should we name this compose-required-doc-rules?",
+      "range": {
+        "startLine": 56,
+        "startChar": 9,
+        "endLine": 56,
+        "endChar": 18
+      },
+      "revId": "43ce0d411566eb06adf3232401ee311d0eb62256",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21d81c0c_2a7c3814",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-02T20:17:32Z",
+      "side": 1,
+      "message": "File should be named compose-required-doc-rules.yaml",
+      "revId": "43ce0d411566eb06adf3232401ee311d0eb62256",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
