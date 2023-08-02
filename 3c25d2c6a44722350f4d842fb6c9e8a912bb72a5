@@ -22,6 +22,30 @@
       },
       "revId": "3c25d2c6a44722350f4d842fb6c9e8a912bb72a5",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5a8fa4d_cd7611ef",
+        "filename": ".github/workflows/gerrit-required-doc-rules-verify.yaml",
+        "patchSetId": 12
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-02T14:58:41Z",
+      "side": 1,
+      "message": "env vars never really work as boolean anyway.",
+      "parentUuid": "76496b97_6d4bc570",
+      "range": {
+        "startLine": 103,
+        "startChar": 12,
+        "endLine": 103,
+        "endChar": 52
+      },
+      "revId": "3c25d2c6a44722350f4d842fb6c9e8a912bb72a5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
