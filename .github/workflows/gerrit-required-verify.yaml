@@ -74,6 +74,7 @@ jobs:
         run: sleep 10s
 
   info-yaml-verify:
+    needs: prepare
     # yamllint disable-line rule:line-length
     uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-info-yaml-verify.yaml@main
     with:
@@ -111,7 +112,7 @@ jobs:
   vote:
     if: ${{ always() }}
     # yamllint enable rule:line-length
-    needs: [prepare, doc-rules-validation]
+    needs: [prepare, doc-rules-validation, info-yaml-verify]
     runs-on: ubuntu-latest
     steps:
       - uses: technote-space/workflow-conclusion-action@v3
