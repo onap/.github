@@ -1,5 +1,5 @@
 ---
-name: Gerrit Required doc-rules Verify
+name: Gerrit Required Verify
 
 # yamllint disable-line rule:truthy
 on:
@@ -49,7 +49,7 @@ on:
 
 concurrency:
   # yamllint disable-line rule:line-length
-  group: required-doc-rules-${{ github.workflow }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
+  group: required-verify-${{ github.workflow }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
   cancel-in-progress: true
 
 env:
@@ -72,6 +72,23 @@ jobs:
           comment-only: true
       - name: Allow replication
         run: sleep 10s
+
+  info-yaml-verify:
+    # yamllint disable-line rule:line-length
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-info-yaml-verify.yaml@main
+    with:
+      GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
+      GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
+      GERRIT_CHANGE_NUMBER: ${{ inputs.GERRIT_CHANGE_NUMBER }}
+      GERRIT_CHANGE_URL: ${{ inputs.GERRIT_CHANGE_URL }}
+      GERRIT_EVENT_TYPE: ${{ inputs.GERRIT_EVENT_TYPE }}
+      GERRIT_PATCHSET_NUMBER: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
+      GERRIT_PATCHSET_REVISION: ${{ inputs.GERRIT_PATCHSET_REVISION }}
+      GERRIT_PROJECT: ${{ inputs.GERRIT_PROJECT }}
+      GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
+      TARGET_REPO: ${{ inputs.TARGET_REPO }}
+    secrets:
+      GERRIT_SSH_REQUIRED_PRIVKEY: ${{ secrets.GERRIT_SSH_REQUIRED_PRIVKEY }}
 
   doc-rules-validation:
     needs: prepare
