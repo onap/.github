@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27a4e561_f3f5ad52",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-02T20:56:08Z",
+      "side": 1,
+      "message": "Gerrit Compose Required",
+      "range": {
+        "startLine": 2,
+        "startChar": 6,
+        "endLine": 2,
+        "endChar": 21
+      },
+      "revId": "97e673a39af4e42a6a991524a0cc8a5f4ff4a3fd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d16b68b_04e0b60c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-02T20:56:08Z",
+      "side": 1,
+      "message": "File should be gerrit-compose-required-doc-rules-verify.yaml",
+      "revId": "97e673a39af4e42a6a991524a0cc8a5f4ff4a3fd",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
