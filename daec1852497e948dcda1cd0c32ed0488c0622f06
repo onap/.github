@@ -70,6 +70,30 @@
       },
       "revId": "daec1852497e948dcda1cd0c32ed0488c0622f06",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ec0c70a_cedbb8f3",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-02T21:27:08Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2b7c9291_1acc004b",
+      "range": {
+        "startLine": 2,
+        "startChar": 6,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "daec1852497e948dcda1cd0c32ed0488c0622f06",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
