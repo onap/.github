@@ -22,6 +22,30 @@
       },
       "revId": "daec1852497e948dcda1cd0c32ed0488c0622f06",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2b7c9291_1acc004b",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-02T21:25:27Z",
+      "side": 1,
+      "message": "I think we\u0027re fine with it this way",
+      "parentUuid": "e04c7cf2_aed50955",
+      "range": {
+        "startLine": 2,
+        "startChar": 6,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "daec1852497e948dcda1cd0c32ed0488c0622f06",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
