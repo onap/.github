@@ -24,6 +24,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8ff8154_168f2f50",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-31T20:43:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ebeed6bf_26f94708",
+      "range": {
+        "startLine": 64,
+        "startChar": 29,
+        "endLine": 64,
+        "endChar": 44
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eed8b573_be577e92",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-08-31T20:41:27Z",
       "side": 1,
       "message": "GERRIT_SSH_REQUIRED_PRIVKEY",
+      "range": {
+        "startLine": 65,
+        "startChar": 27,
+        "endLine": 65,
+        "endChar": 45
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed2b7627_846651ce",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-31T20:43:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eed8b573_be577e92",
       "range": {
         "startLine": 65,
         "startChar": 27,
@@ -70,6 +118,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c21cac7f_971d4666",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-31T20:43:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34cbae10_4a5410e4",
+      "range": {
+        "startLine": 103,
+        "startChar": 29,
+        "endLine": 103,
+        "endChar": 44
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0f986bf_6afc0c41",
@@ -83,6 +155,30 @@
       "writtenOn": "2023-08-31T20:41:27Z",
       "side": 1,
       "message": "GERRIT_SSH_REQUIRED_PRIVKEY",
+      "range": {
+        "startLine": 104,
+        "startChar": 27,
+        "endLine": 104,
+        "endChar": 45
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be245740_fbe661a2",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-31T20:43:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b0f986bf_6afc0c41",
       "range": {
         "startLine": 104,
         "startChar": 27,
