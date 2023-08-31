@@ -1,6 +1,98 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebeed6bf_26f94708",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-31T20:41:27Z",
+      "side": 1,
+      "message": "GERRIT_SSH_REQUIRED_USER",
+      "range": {
+        "startLine": 64,
+        "startChar": 29,
+        "endLine": 64,
+        "endChar": 44
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eed8b573_be577e92",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-31T20:41:27Z",
+      "side": 1,
+      "message": "GERRIT_SSH_REQUIRED_PRIVKEY",
+      "range": {
+        "startLine": 65,
+        "startChar": 27,
+        "endLine": 65,
+        "endChar": 45
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34cbae10_4a5410e4",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-31T20:41:27Z",
+      "side": 1,
+      "message": "GERRIT_SSH_REQUIRED_USER",
+      "range": {
+        "startLine": 103,
+        "startChar": 29,
+        "endLine": 103,
+        "endChar": 44
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0f986bf_6afc0c41",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-08-31T20:41:27Z",
+      "side": 1,
+      "message": "GERRIT_SSH_REQUIRED_PRIVKEY",
+      "range": {
+        "startLine": 104,
+        "startChar": 27,
+        "endLine": 104,
+        "endChar": 45
+      },
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "12198e5a_ec5202c2",
