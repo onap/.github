@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12198e5a_ec5202c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-08-31T20:37:06Z",
+      "side": 1,
+      "message": "Blocking until ready to merge, need to notify the community",
+      "revId": "1ed24eb75cdd43b4c5b14ce8c9801ca285b7ef3c",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
