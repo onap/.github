@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1abcb5b_f7333f0a",
+        "filename": ".github/workflows/gerrit-required-merge.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-09-01T16:43:49Z",
+      "side": 1,
+      "message": "Need to add `TARGET_REPO: ${{ inputs.TARGET_REPO }}` given what you\u0027re trying to do with the latest rework.",
+      "revId": "f63a864d224f46e57363b62c752edc11a738d930",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "497d1012_d31ca813",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-09-01T16:43:49Z",
+      "side": 1,
+      "message": "This should be two separate changes.\n\nOne change for adding the merge job (which needs some fixes) and one change for adding the verify job.",
+      "revId": "f63a864d224f46e57363b62c752edc11a738d930",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
