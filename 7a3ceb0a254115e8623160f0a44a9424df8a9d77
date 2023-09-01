@@ -16,6 +16,24 @@
       "message": "You need to add `TARGET_REPO: ${{ inputs.TARGET_REPO }}`",
       "revId": "7a3ceb0a254115e8623160f0a44a9424df8a9d77",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df15181b_117c16c2",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2023-09-01T17:34:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a0a46904_c2aa9975",
+      "revId": "7a3ceb0a254115e8623160f0a44a9424df8a9d77",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
