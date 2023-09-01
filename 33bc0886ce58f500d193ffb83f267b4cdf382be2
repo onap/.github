@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "542ebb16_0e40d256",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-09-01T17:31:39Z",
+      "side": 1,
+      "message": "Needs https://github.com/lfit/releng-reusable-workflows/pull/47 to land before this can be merged",
+      "revId": "33bc0886ce58f500d193ffb83f267b4cdf382be2",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
