@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0a46904_c2aa9975",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2023-09-01T17:30:48Z",
+      "side": 1,
+      "message": "You need to add `TARGET_REPO: ${{ inputs.TARGET_REPO }}`",
+      "revId": "7a3ceb0a254115e8623160f0a44a9424df8a9d77",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
