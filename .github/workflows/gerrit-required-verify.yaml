@@ -107,19 +107,22 @@ jobs:
 
   rtd-validation:
     needs: prepare
-    # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@main
-    with:
-      GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
-      GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
-      GERRIT_CHANGE_NUMBER: ${{ inputs.GERRIT_CHANGE_NUMBER }}
-      GERRIT_CHANGE_URL: ${{ inputs.GERRIT_CHANGE_URL }}
-      GERRIT_EVENT_TYPE: ${{ inputs.GERRIT_EVENT_TYPE }}
-      GERRIT_PATCHSET_NUMBER: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
-      GERRIT_PATCHSET_REVISION: ${{ inputs.GERRIT_PATCHSET_REVISION }}
-      GERRIT_PROJECT: ${{ inputs.GERRIT_PROJECT }}
-      GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
-      TARGET_REPO: ${{ inputs.TARGET_REPO }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tlylt/install-graphviz@v1.0.0
+      # yamllint disable-line rule:line-length
+      - uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@main
+        with:
+          GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
+          GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
+          GERRIT_CHANGE_NUMBER: ${{ inputs.GERRIT_CHANGE_NUMBER }}
+          GERRIT_CHANGE_URL: ${{ inputs.GERRIT_CHANGE_URL }}
+          GERRIT_EVENT_TYPE: ${{ inputs.GERRIT_EVENT_TYPE }}
+          GERRIT_PATCHSET_NUMBER: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
+          GERRIT_PATCHSET_REVISION: ${{ inputs.GERRIT_PATCHSET_REVISION }}
+          GERRIT_PROJECT: ${{ inputs.GERRIT_PROJECT }}
+          GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
+          TARGET_REPO: ${{ inputs.TARGET_REPO }}
     secrets:
       RTD_TOKEN: ${{ secrets.RTD_TOKEN }}
 
