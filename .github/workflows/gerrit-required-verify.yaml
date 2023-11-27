@@ -105,8 +105,12 @@ jobs:
     secrets:
       GERRIT_SSH_REQUIRED_PRIVKEY: ${{ secrets.GERRIT_SSH_REQUIRED_PRIVKEY }}
 
-  rtd-validation:
+  install-graphviz:
     needs: prepare
+    uses: tlylt/install-graphviz@v1.0.0
+
+  rtd-validation:
+    needs: prepare, install-graphviz
     # yamllint disable-line rule:line-length
     uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@main
     with:
