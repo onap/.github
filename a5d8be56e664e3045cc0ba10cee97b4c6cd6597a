@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9588aa55_f9aa2b30",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1869cf3a_8f55c50a",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f2499ca7_0b0d5ad0",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc458428_06477da9",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "86bd901c_98d6be91",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4cd3ccbf_a1ec4321",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 1,
+      "message": "Need to lock in the called actions / workflows with a proper git SHA.\n\nAlso, need to make sure that the info validation job is still required for the vote to pass in the original workflow.",
+      "revId": "a5d8be56e664e3045cc0ba10cee97b4c6cd6597a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}

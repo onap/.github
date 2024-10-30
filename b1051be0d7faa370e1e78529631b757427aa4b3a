@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a5e43781_b3dded0b",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 0,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9ae9c42_70cd4379",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 0,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea5d21d5_cf49a8db",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 0,
+      "message": "This is still required for the vote step to happen",
+      "range": {
+        "startLine": 129,
+        "startChar": 43,
+        "endLine": 129,
+        "endChar": 59
+      },
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c9240a6_0e9cecc9",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 0,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e4c14af7_833b822f",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-30T20:16:58Z",
+      "side": 0,
+      "message": "Please make sure that you\u0027re using the latest version of of this action _and_ that you\u0027re using a SHA1 target with a comment of the label",
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
