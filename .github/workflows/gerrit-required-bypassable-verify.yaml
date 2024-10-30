@@ -1,5 +1,5 @@
 ---
-name: Gerrit Required Verify
+name: Gerrit Required Bypassable Verify
 
 # yamllint disable-line rule:truthy
 on:
@@ -43,13 +43,13 @@ on:
         type: string
       TARGET_REPO:
         # yamllint disable-line rule:line-length
-        description: "The target GitHub repository needing the required workflow"
+        description: "The target GitHub repository needing the bypassable workflow"
         required: true
         type: string
 
 concurrency:
   # yamllint disable-line rule:line-length
-  group: required-verify-${{ github.workflow }}-${{ github.event.inputs.GERRIT_BRANCH }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
+  group: required-bypassable-verify-${{ github.workflow }}-${{ github.event.inputs.GERRIT_BRANCH }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -60,8 +60,8 @@ jobs:
         uses: lfit/gerrit-review-action@9627b9a144f2a2cad70707ddfae87c87dce60729 #v0.8
         with:
           host: ${{ vars.GERRIT_SERVER }}
-          username: ${{ vars.GERRIT_SSH_REQUIRED_USER }}
-          key: ${{ secrets.GERRIT_SSH_REQUIRED_PRIVKEY }}
+          username: ${{ vars.GERRIT_SSH_BYPASSABLE_USER }}
+          key: ${{ secrets.GERRIT_SSH_BYPASSABLE_PRIVKEY }}
           known_hosts: ${{ vars.GERRIT_KNOWN_HOSTS }}
           gerrit-change-number: ${{ inputs.GERRIT_CHANGE_NUMBER }}
           gerrit-patchset-number: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
@@ -69,10 +69,10 @@ jobs:
       - name: Allow replication
         run: sleep 10s
 
-  info-yaml-verify:
+  doc-rules-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-info-yaml-verify.yaml@fbf2b4bcca9a6306765f39552d8cfcd962ab6945 #v0.2.1
+    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@92a088daebf3fb357d6a99c83ffa7497fb37a834
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -85,12 +85,30 @@ jobs:
       GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
       TARGET_REPO: ${{ inputs.TARGET_REPO }}
     secrets:
-      GERRIT_SSH_REQUIRED_PRIVKEY: ${{ secrets.GERRIT_SSH_REQUIRED_PRIVKEY }}
+      GERRIT_SSH_BYPASSABLE_PRIVKEY: ${{ secrets.GERRIT_SSH_BYPASSABLE_PRIVKEY }}
+
+  rtd-validation:
+    needs: prepare
+    # yamllint disable-line rule:line-length
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@fbf2b4bcca9a6306765f39552d8cfcd962ab6945 #v0.2.1
+    with:
+      GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
+      GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
+      GERRIT_CHANGE_NUMBER: ${{ inputs.GERRIT_CHANGE_NUMBER }}
+      GERRIT_CHANGE_URL: ${{ inputs.GERRIT_CHANGE_URL }}
+      GERRIT_EVENT_TYPE: ${{ inputs.GERRIT_EVENT_TYPE }}
+      GERRIT_PATCHSET_NUMBER: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
+      GERRIT_PATCHSET_REVISION: ${{ inputs.GERRIT_PATCHSET_REVISION }}
+      GERRIT_PROJECT: ${{ inputs.GERRIT_PROJECT }}
+      GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
+      TARGET_REPO: ${{ inputs.TARGET_REPO }}
+    secrets:
+      RTD_TOKEN: ${{ secrets.RTD_TOKEN }}
 
   vote:
     if: ${{ always() }}
     # yamllint enable rule:line-length
-    needs: [prepare, info-yaml-verify]
+    needs: [prepare, doc-rules-validation, rtd-validation]
     runs-on: ubuntu-latest
     steps:
       - uses: technote-space/workflow-conclusion-action@45ce8e0eb155657ab8ccf346ade734257fd196a5 #v3.0.3
@@ -98,8 +116,8 @@ jobs:
         uses: lfit/gerrit-review-action@9627b9a144f2a2cad70707ddfae87c87dce60729 #v0.8
         with:
           host: ${{ vars.GERRIT_SERVER }}
-          username: ${{ vars.GERRIT_SSH_REQUIRED_USER }}
-          key: ${{ secrets.GERRIT_SSH_REQUIRED_PRIVKEY }}
+          username: ${{ vars.GERRIT_SSH_BYPASSABLE_USER }}
+          key: ${{ secrets.GERRIT_SSH_BYPASSABLE_PRIVKEY }}
           known_hosts: ${{ vars.GERRIT_KNOWN_HOSTS }}
           gerrit-change-number: ${{ inputs.GERRIT_CHANGE_NUMBER }}
           gerrit-patchset-number: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
