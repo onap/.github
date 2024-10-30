@@ -118,6 +118,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "06314b8c_e5627159",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 481
+      },
+      "writtenOn": "2024-10-30T21:18:06Z",
+      "side": 0,
+      "message": "We will still need \"prepare, info-yaml-verify\"",
+      "parentUuid": "1d5feae7_00ad49a9",
+      "range": {
+        "startLine": 129,
+        "startChar": 43,
+        "endLine": 129,
+        "endChar": 59
+      },
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c9240a6_0e9cecc9",
