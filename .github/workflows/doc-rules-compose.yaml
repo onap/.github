@@ -47,7 +47,7 @@ on:
         required: true
         type: string
     secrets:
-      GERRIT_SSH_REQUIRED_PRIVKEY:
+      GERRIT_SSH_BYPASSABLE_PRIVKEY:
         description: "SSH Key for the authorized user account"
         required: true
 
