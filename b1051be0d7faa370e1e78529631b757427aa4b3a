@@ -142,6 +142,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea243807_301446c4",
+        "filename": ".github/workflows/gerrit-required-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-10-31T15:17:21Z",
+      "side": 0,
+      "message": "The reason for still needing the info-yaml-verify is that the `needs` clause tells the job what it has to wait for before it can run. We absolutely have to have the voting wait on all jobs.",
+      "parentUuid": "06314b8c_e5627159",
+      "range": {
+        "startLine": 129,
+        "startChar": 43,
+        "endLine": 129,
+        "endChar": 59
+      },
+      "revId": "b1051be0d7faa370e1e78529631b757427aa4b3a",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3c9240a6_0e9cecc9",
