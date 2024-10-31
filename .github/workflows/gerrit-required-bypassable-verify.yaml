@@ -73,7 +73,7 @@ jobs:
   doc-rules-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@92a088daebf3fb357d6a99c83ffa7497fb37a834
+    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@94f0735fda63436621a159a5eff460ec5f88e612
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
