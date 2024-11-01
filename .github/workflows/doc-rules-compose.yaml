@@ -73,10 +73,10 @@ jobs:
           delay: "0s"
           repository: ${{ inputs.TARGET_REPO }}
           ref: refs/heads/${{ inputs.GERRIT_BRANCH }}
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v5
         id: setup-python
         with:
-          python-version: "3.11"
+          python-version: "3.13"
       - name: Clone git submodules
         run: git submodule update --init
       - name: Start doc-rules Verify and setting values
