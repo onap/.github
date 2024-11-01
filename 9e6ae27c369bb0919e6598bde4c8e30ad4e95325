@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "11a8ef5d_d0a1fe2d",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-11-01T11:18:09Z",
+      "side": 1,
+      "message": "This needs to be upgraded to `54d751e8bd167bc91f7d665dabe33fae87aaaa63  # v0.9` and it will resolve the issues related to the deprecated `actions/checkout`",
+      "revId": "9e6ae27c369bb0919e6598bde4c8e30ad4e95325",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9be80c23_a67e4538",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1
+      },
+      "writtenOn": "2024-11-01T11:18:09Z",
+      "side": 1,
+      "message": "Please upgrade the `checkout-gerrit-change-action` as well",
+      "revId": "9e6ae27c369bb0919e6598bde4c8e30ad4e95325",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
