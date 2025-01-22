@@ -92,7 +92,7 @@ jobs:
   rtd-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@fbf2b4bcca9a6306765f39552d8cfcd962ab6945 #v0.2.1
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@36ff4d15c9c86771dc5d7073b5df323970f74b95 # 2025-01-22
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
