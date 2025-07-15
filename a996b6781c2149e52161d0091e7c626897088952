@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d204b2e8_70786461",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2025-07-15T09:08:59Z",
+      "side": 1,
+      "message": "can you use RTD_PYTHON_VERSION here?!",
+      "range": {
+        "startLine": 83,
+        "startChar": 26,
+        "endLine": 83,
+        "endChar": 32
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62990727_670fe131",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2025-07-15T09:08:59Z",
+      "side": 1,
+      "message": "Non-blocking comment: would prefer this to be removed (the history is kept in git anyway)",
+      "range": {
+        "startLine": 245,
+        "startChar": 14,
+        "endLine": 245,
+        "endChar": 52
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e2e59ed_77928044",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2025-07-15T09:08:59Z",
+      "side": 1,
+      "message": "Non-blocking comment: would prefer this to be removed (the history is kept in git anyway)",
+      "range": {
+        "startLine": 254,
+        "startChar": 13,
+        "endLine": 255,
+        "endChar": 52
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
