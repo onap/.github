@@ -24,6 +24,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b6da933_abdb20e3",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 8049
+      },
+      "writtenOn": "2025-07-15T09:19:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8c8e8d46_6bac5d7e",
+      "range": {
+        "startLine": 244,
+        "startChar": 0,
+        "endLine": 249,
+        "endChar": 14
+      },
+      "revId": "7beb023e83ef7fd47ab124613e9aabbe0f8482f1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9091ea7c_d079d28b",
@@ -37,6 +61,30 @@
       "writtenOn": "2025-07-15T08:16:58Z",
       "side": 1,
       "message": "I prefer to remove these check altogether\nCan we do that now ?",
+      "range": {
+        "startLine": 253,
+        "startChar": 4,
+        "endLine": 258,
+        "endChar": 14
+      },
+      "revId": "7beb023e83ef7fd47ab124613e9aabbe0f8482f1",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39463465_864f7584",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 8049
+      },
+      "writtenOn": "2025-07-15T09:19:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9091ea7c_d079d28b",
       "range": {
         "startLine": 253,
         "startChar": 4,

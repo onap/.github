@@ -24,6 +24,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a6d4bc1_7266e7b8",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 8049
+      },
+      "writtenOn": "2025-07-15T09:19:12Z",
+      "side": 1,
+      "message": "We could use the variable, but it\u0027s actually NOT related to the the RTD job, it would be coincidental if the version of Python used in this workflow matched the RTD job, so I\u0027m not sure we should replace it in this instance. In fact, it seems completely redundant. We can test removing the setup-python call afterwards?",
+      "parentUuid": "d204b2e8_70786461",
+      "range": {
+        "startLine": 83,
+        "startChar": 26,
+        "endLine": 83,
+        "endChar": 32
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "62990727_670fe131",
@@ -47,6 +71,30 @@
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "902c5151_44e864b6",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 8049
+      },
+      "writtenOn": "2025-07-15T09:19:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "62990727_670fe131",
+      "range": {
+        "startLine": 245,
+        "startChar": 14,
+        "endLine": 245,
+        "endChar": 52
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4e2e59ed_77928044",
@@ -60,6 +108,30 @@
       "writtenOn": "2025-07-15T09:08:59Z",
       "side": 1,
       "message": "Non-blocking comment: would prefer this to be removed (the history is kept in git anyway)",
+      "range": {
+        "startLine": 254,
+        "startChar": 13,
+        "endLine": 255,
+        "endChar": 52
+      },
+      "revId": "a996b6781c2149e52161d0091e7c626897088952",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de6f76af_311f9337",
+        "filename": ".github/workflows/doc-rules-compose.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 255,
+      "author": {
+        "id": 8049
+      },
+      "writtenOn": "2025-07-15T09:19:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4e2e59ed_77928044",
       "range": {
         "startLine": 254,
         "startChar": 13,
