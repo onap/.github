@@ -22,6 +22,30 @@
       },
       "revId": "624c799f0679d03c9bc17fd312b0e8746c526850",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34c72d64_a025b0c4",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 47
+      },
+      "writtenOn": "2025-07-16T11:31:03Z",
+      "side": 1,
+      "message": "Hi Toine, In short, using a specific commit hash in GitHub Actions is safer because it\u0027s immutable. It guarantees you\u0027re always using the exact same code.\n\nWhy Tags \u0026 Branches Are Risky? Mutable: Tags (like @v1) and branch names (like @main) are just pointers that can be moved. A bad actor could gain control of a repository and change a tag to point to new, malicious code. Your workflow, still using the same tag, would then unknowingly pull in and run that malicious code, potentially stealing your secrets or compromising your build. This is a potential risk.\n\nWhy Commit Hashes Are Safe? Immutable: A commit hash (e.g., @0db806afe33...) is a permanent, unique fingerprint for a specific version of the code. It can never be changed to point to anything else.Therefore by \"pinning\" to a commit hash, you ensure that your workflow will always execute the exact code you have reviewed and approved, protecting you from malicious updates.",
+      "parentUuid": "7fb42bba_458ec84a",
+      "range": {
+        "startLine": 76,
+        "startChar": 63,
+        "endLine": 76,
+        "endChar": 104
+      },
+      "revId": "624c799f0679d03c9bc17fd312b0e8746c526850",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
