@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7fb42bba_458ec84a",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2025-07-16T08:53:29Z",
+      "side": 1,
+      "message": "I don\u0027t like this referencing of specific version. It obviously lead to the daily in the fix we are working on.\nDon\u0027t fully understand why we cannot use @master or even no version at all. if it is a security risk in the target file the same hacker can hack this file...\n\nAnyway I\u0027ll accept this is the current way of working and as Matt has shown me the source of this hah I am happy to approve it",
+      "range": {
+        "startLine": 76,
+        "startChar": 63,
+        "endLine": 76,
+        "endChar": 104
+      },
+      "revId": "624c799f0679d03c9bc17fd312b0e8746c526850",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
