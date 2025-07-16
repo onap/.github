@@ -46,6 +46,30 @@
       },
       "revId": "624c799f0679d03c9bc17fd312b0e8746c526850",
       "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ff15ebc_c8b6ef8c",
+        "filename": ".github/workflows/gerrit-required-bypassable-verify.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2025-07-16T11:53:21Z",
+      "side": 1,
+      "message": "I don\u0027t know, i accept this is the way it is. But wonder if  the security concerns \u0026 risk are worth the cost of maintainability here. I suppose it will depend on who you ask.... \nI definitely I hope our code never will start using commit hashes to resolve \u0027dependencies\u0027 in whatever form, I can only guess at the additional cost of maintain such a way of working.....",
+      "parentUuid": "34c72d64_a025b0c4",
+      "range": {
+        "startLine": 76,
+        "startChar": 63,
+        "endLine": 76,
+        "endChar": 104
+      },
+      "revId": "624c799f0679d03c9bc17fd312b0e8746c526850",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
     }
   ]
 }
