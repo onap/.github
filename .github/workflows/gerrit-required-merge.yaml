@@ -58,7 +58,7 @@ jobs:
     steps:
       - name: Notify job start
         # yamllint disable-line rule:line-length
-        uses: lfit/gerrit-review-action@6ac4c2322b68c0120a9b516eb0421491ee1b3fdf  # v0.4
+        uses: lfreleng-actions/gerrit-review-action@b26a98041c59f9a877048c320313ab13bcc19aae  # v1.0.1
         with:
           host: ${{ vars.GERRIT_SERVER }}
           username: ${{ vars.GERRIT_SSH_REQUIRED_USER }}
@@ -74,7 +74,7 @@ jobs:
   call-gerrit-rtdv3-merge:
     needs: notify
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-merge.yaml@main
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-merge.yaml@37bbdea5cca2f21e502f7ff580306c78307d1d41  # v0.3.1
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -95,10 +95,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get workflow conclusion
-        uses: technote-space/workflow-conclusion-action@v3
+        # yamllint disable-line rule:line-length
+        uses: im-open/workflow-conclusion@fce18569e28a9f2ed1feca1e6d4251e6a7365fdc  # v2.2.4
       - name: Report workflow conclusion
         # yamllint disable-line rule:line-length
-        uses: lfit/gerrit-review-action@6ac4c2322b68c0120a9b516eb0421491ee1b3fdf  # v0.4
+        uses: lfreleng-actions/gerrit-review-action@b26a98041c59f9a877048c320313ab13bcc19aae  # v1.0.1
         with:
           host: ${{ vars.GERRIT_SERVER }}
           username: ${{ vars.GERRIT_SSH_REQUIRED_USER }}
