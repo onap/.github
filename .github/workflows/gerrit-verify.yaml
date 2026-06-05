@@ -65,48 +65,26 @@ jobs:
       - name: Allow replication
         run: sleep 10s
 
-  actionlint:
+  repo-linting:
     needs: clear-vote
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout change
-        # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/checkout-gerrit-change-action@8523d768952d9690702b4696a8310d2a84b1be39  # v1.0.1
-        with:
-          gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
-          delay: "0s"
-      - name: Download actionlint
-        id: get_actionlint
-        # yamllint disable-line rule:line-length
-        run: bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-        shell: bash
-      - name: Check workflow files
-        run: ${{ steps.get_actionlint.outputs.executable }} -color
-        shell: bash
-
-
-  pre-commit:
-    needs: clear-vote
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout change
-        # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/checkout-gerrit-change-action@8523d768952d9690702b4696a8310d2a84b1be39  # v1.0.1
-        with:
-          gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
-          delay: "0s"
-      - name: Configure Python
-        # yamllint disable-line rule:line-length
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405  # v6.2.0
-        with:
-          python-version: "3.11"
-      - name: Run static analysis and format checkers
-        # yamllint disable-line rule:line-length
-        run: SKIP=actionlint pipx run pre-commit run --all-files --show-diff-on-failure
+    # Delegate actionlint + pre-commit to the shared reusable workflow so the
+    # checks are maintained centrally in lfit/releng-reusable-workflows.
+    # yamllint disable-line rule:line-length
+    uses: lfit/releng-reusable-workflows/.github/workflows/compose-repo-linting.yaml@b2adc11cd90f0ca72a34202589a06d374b5d8366  # v0.5.0
+    with:
+      GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
+      GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
+      GERRIT_CHANGE_NUMBER: ${{ inputs.GERRIT_CHANGE_NUMBER }}
+      GERRIT_CHANGE_URL: ${{ inputs.GERRIT_CHANGE_URL }}
+      GERRIT_EVENT_TYPE: ${{ inputs.GERRIT_EVENT_TYPE }}
+      GERRIT_PATCHSET_NUMBER: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
+      GERRIT_PATCHSET_REVISION: ${{ inputs.GERRIT_PATCHSET_REVISION }}
+      GERRIT_PROJECT: ${{ inputs.GERRIT_PROJECT }}
+      GERRIT_REFSPEC: ${{ inputs.GERRIT_REFSPEC }}
 
   vote:
     if: ${{ always() }}
-    needs: [clear-vote, actionlint, pre-commit]
+    needs: [clear-vote, repo-linting]
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
