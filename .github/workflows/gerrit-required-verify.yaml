@@ -70,10 +70,10 @@ jobs:
       - name: Allow replication
         run: sleep 10s
 
-  info-yaml-verify:
+  change-isolation-verify:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-info-yaml-verify.yaml@37bbdea5cca2f21e502f7ff580306c78307d1d41  # v0.3.1
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-change-isolation-verify.yaml@fd3c1b43bc919e9e70787b009ffa2768ddbb1267  # v0.7.2
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -91,7 +91,7 @@ jobs:
   vote:
     if: ${{ always() }}
     # yamllint enable rule:line-length
-    needs: [prepare, info-yaml-verify]
+    needs: [prepare, change-isolation-verify]
     runs-on: ubuntu-latest
     steps:
       # yamllint disable-line rule:line-length
