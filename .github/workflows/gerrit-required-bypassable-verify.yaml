@@ -58,7 +58,7 @@ jobs:
     steps:
       - name: Clear votes
         # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/gerrit-review-action@b26a98041c59f9a877048c320313ab13bcc19aae  # v1.0.1
+        uses: lfreleng-actions/gerrit-review-action@a1c036a59b94c8ab89de26d378f6a28cc7378b13  # v1.1.2
         with:
           host: ${{ vars.GERRIT_SERVER }}
           username: ${{ vars.GERRIT_SSH_BYPASSABLE_USER }}
@@ -73,7 +73,7 @@ jobs:
   doc-rules-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@b8dfd6b788c1dad20829453a18a42da8fa523c7d
+    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@0ee15367eb2d0ee1372c70bef054695d02216f45  # main
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -92,7 +92,7 @@ jobs:
   rtd-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@37bbdea5cca2f21e502f7ff580306c78307d1d41  # v0.3.1
+    uses: lfit/releng-reusable-workflows/.github/workflows/gerrit-compose-required-rtdv3-verify.yaml@fd3c1b43bc919e9e70787b009ffa2768ddbb1267  # v0.7.2
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
@@ -116,10 +116,10 @@ jobs:
       # yamllint disable-line rule:line-length
       - name: Get conclusion
         # yamllint disable-line rule:line-length
-        uses: im-open/workflow-conclusion@fce18569e28a9f2ed1feca1e6d4251e6a7365fdc  # v2.2.4
+        uses: im-open/workflow-conclusion@8eac7f17381a6917bc04fec3e2c92e70ebc37526  # v3.0.0
       - name: Set vote
         # yamllint disable-line rule:line-length
-        uses: lfreleng-actions/gerrit-review-action@b26a98041c59f9a877048c320313ab13bcc19aae  # v1.0.1
+        uses: lfreleng-actions/gerrit-review-action@a1c036a59b94c8ab89de26d378f6a28cc7378b13  # v1.1.2
         with:
           host: ${{ vars.GERRIT_SERVER }}
           username: ${{ vars.GERRIT_SSH_BYPASSABLE_USER }}
