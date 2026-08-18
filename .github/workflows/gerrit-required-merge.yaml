@@ -74,7 +74,7 @@ jobs:
   call-gerrit-rtdv3-merge:
     needs: notify
     # yamllint disable-line rule:line-length
-    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@b52b526f49a6296c94ad448958818eb10048f41f  # v0.0.2
+    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@37fbeca44efb703c1eaea6439bdfed08bf351efa  # v0.0.3
     with:
       mode: 'merge'
       # A merged change builds from the branch, not from a change ref.
