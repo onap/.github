@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f940995_37a5311e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6639
+      },
+      "writtenOn": "2026-08-18T08:27:30Z",
+      "side": 1,
+      "message": "i cant tell much from just a ref version change\nhave to trust whats in the commit message :-)",
+      "revId": "bea99d328eb783a43d3aad554b4224338ca2c8b5",
+      "serverId": "14b4e41f-c4e3-4fb9-9955-6a9b5656895a"
+    }
+  ]
+}
