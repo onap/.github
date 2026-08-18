@@ -1,0 +1,33 @@
+---
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 The Linux Foundation
+
+# Configuration for zizmor: https://docs.zizmor.sh
+#
+# Run locally with the strictest persona before pushing:
+#
+#     zizmor --persona auditor .github/workflows/
+
+rules:
+  secrets-outside-env:
+    config:
+      # These SSH keys let the CI account vote on Gerrit changes. Every
+      # workflow here starts from a Gerrit-dispatched workflow_dispatch
+      # and hands the key straight to gerrit-review-action.
+      #
+      # Moving them into a GitHub environment would not help. The keys
+      # are organisation secrets managed by LF IT, and an environment
+      # only scopes secrets stored in that environment; declaring one
+      # without moving the secrets buys nothing but a deployment entry
+      # in the UI. Moving them is worse: environment secrets do not
+      # reach reusable workflows unless the caller uses
+      # 'secrets: inherit', which zizmor flags in turn under
+      # secrets-inherit, and these workflows pass named secrets to
+      # reusable workflows by design.
+      #
+      # Revisit if LF IT re-scopes the credentials, or once GitHub fixes
+      # the environment/reusable-workflow interaction.
+      allow:
+        - GERRIT_SSH_PRIVKEY
+        - GERRIT_SSH_REQUIRED_PRIVKEY
+        - GERRIT_SSH_BYPASSABLE_PRIVKEY

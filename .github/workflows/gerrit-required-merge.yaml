@@ -52,9 +52,15 @@ concurrency:
   group: required-merge-${{ github.workflow }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
   cancel-in-progress: true
 
+# Grant nothing by default; each job below asks for what it needs.
+permissions: {}
+
 jobs:
   notify:
+    name: Notify Gerrit
     runs-on: ubuntu-latest
+    # Comments travel to Gerrit over SSH, so GITHUB_TOKEN needs no scopes.
+    permissions: {}
     steps:
       - name: Notify job start
         # yamllint disable-line rule:line-length
@@ -73,6 +79,8 @@ jobs:
 
   call-gerrit-rtdv3-merge:
     needs: notify
+    permissions:
+      contents: read
     # yamllint disable-line rule:line-length
     uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@37fbeca44efb703c1eaea6439bdfed08bf351efa  # v0.0.3
     with:
@@ -87,9 +95,12 @@ jobs:
       RTD_TOKEN: ${{ secrets.RTD_TOKEN }}
 
   report-status:
+    name: Report status
     if: ${{ always() }}
     needs: [notify, call-gerrit-rtdv3-merge]
     runs-on: ubuntu-latest
+    permissions:
+      actions: read  # workflow-conclusion reads job results via the API
     steps:
       - name: Get workflow conclusion
         # yamllint disable-line rule:line-length
