@@ -92,7 +92,7 @@ jobs:
   rtd-validation:
     needs: prepare
     # yamllint disable-line rule:line-length
-    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@6f165f809987e5ad175ae388baa9104c2b2e8e41  # v0.0.1
+    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@b52b526f49a6296c94ad448958818eb10048f41f  # v0.0.2
     with:
       mode: 'verify'
       # A patchset builds from the change ref rather than the branch.
