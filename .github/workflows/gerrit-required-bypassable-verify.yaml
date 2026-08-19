@@ -81,7 +81,7 @@ jobs:
     permissions:
       contents: read
     # yamllint disable-line rule:line-length
-    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@0ee15367eb2d0ee1372c70bef054695d02216f45  # main
+    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@639eb32b69bcc9d5cdf23a2a38261247cd92616c  # main
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
