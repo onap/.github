@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: Apache-2.0
+# SPDX-FileCopyrightText: 2026 The Linux Foundation
+#
+# ONAP supplemental egress allow-list.
+#
+# Consumed via lfreleng-actions/harden-runner-block-action, which
+# merges this file with the lfreleng-actions baseline when a workflow
+# passes 'supplemental_config: onap@main'. Entries here reach ONAP
+# workflows only, so this is the place for endpoints that ONAP
+# infrastructure needs and other LF projects do not. Endpoints shared
+# across projects belong in the baseline:
+#
+#   https://github.com/lfreleng-actions/.github/blob/main/.github/harden-runner/lfreleng-actions/allow_list.txt
+#
+# Same format as the baseline: one host[:port] entry per line, sorted
+# alphabetically (LC_ALL=C), with a '# comment' above any entry whose
+# purpose is not obvious. A '*.host' entry matches exactly ONE label.
+# The merge de-duplicates, so an entry may appear in both files while
+# it migrates from one to the other.
+
+# Container registry (Nordix); ONAP integration tests pull
+# onaptest/postgres from here via Testcontainers. It sits outside
+# docker.pull.registry, so the Nexus3 entries do not cover it.
+registry.nordix.org:443
