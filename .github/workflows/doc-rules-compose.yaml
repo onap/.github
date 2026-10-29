@@ -51,10 +51,11 @@ on:
         description: "SSH Key for the authorized user account"
         required: true
 
-concurrency:
-  # yamllint disable-line rule:line-length
-  group: compose-required-doc-rules-${{ github.workflow }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
-  cancel-in-progress: true
+# No concurrency group here: the calling workflow holds one per Gerrit
+# change. A second group in a called workflow only adds a way for runs
+# to cancel each other, and the one this file carried keyed on the
+# Change-Id alone, so a change and its cherry-pick to another branch,
+# verified together, cancelled each other's documentation checks.
 
 # Grant nothing by default; the single job below asks for what it needs.
 permissions: {}

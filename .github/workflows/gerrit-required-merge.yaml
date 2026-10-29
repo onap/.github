@@ -48,8 +48,12 @@ on:
         type: string
 
 concurrency:
+  # One group per Gerrit change. The change number is unique on the
+  # server, unlike the Change-Id: a change and its cherry-pick to a
+  # maintenance branch share one, and merging both close together
+  # must publish both rather than cancel one.
   # yamllint disable-line rule:line-length
-  group: required-merge-${{ github.workflow }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
+  group: required-merge-${{ github.event.inputs.GERRIT_PROJECT }}-${{ github.event.inputs.GERRIT_CHANGE_NUMBER || github.run_id }}
   cancel-in-progress: true
 
 # Grant nothing by default; each job below asks for what it needs.

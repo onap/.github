@@ -48,8 +48,13 @@ on:
         type: string
 
 concurrency:
+  # One group per Gerrit change: a new patchset supersedes the run for
+  # the previous one. The change number is unique on the server, unlike
+  # the Change-Id, which a cherry-pick to another branch keeps and
+  # another project may reuse. Every project's runs share this
+  # repository, so the key must never let two changes collide.
   # yamllint disable-line rule:line-length
-  group: required-bypassable-verify-${{ github.workflow }}-${{ github.event.inputs.GERRIT_BRANCH }}-${{ github.event.inputs.GERRIT_CHANGE_ID || github.run_id }}
+  group: required-bypassable-verify-${{ github.event.inputs.GERRIT_PROJECT }}-${{ github.event.inputs.GERRIT_CHANGE_NUMBER || github.run_id }}
   cancel-in-progress: true
 
 # Grant nothing by default; each job below asks for what it needs.
@@ -80,8 +85,9 @@ jobs:
     needs: prepare
     permissions:
       contents: read
-    # yamllint disable-line rule:line-length
-    uses: onap/.github/.github/workflows/doc-rules-compose.yaml@639eb32b69bcc9d5cdf23a2a38261247cd92616c  # main
+    # A self-repository reference resolves inside this commit, so the
+    # called workflow can never drift from its caller as a pin did.
+    uses: $/.github/workflows/doc-rules-compose.yaml
     with:
       GERRIT_BRANCH: ${{ inputs.GERRIT_BRANCH }}
       GERRIT_CHANGE_ID: ${{ inputs.GERRIT_CHANGE_ID }}
