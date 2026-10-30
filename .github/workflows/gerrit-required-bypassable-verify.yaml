@@ -130,13 +130,9 @@ jobs:
     # yamllint enable rule:line-length
     needs: [prepare, doc-rules-validation, rtd-validation]
     runs-on: ubuntu-latest
-    permissions:
-      actions: read  # workflow-conclusion reads job results via the API
+    # Votes travel to Gerrit over SSH, so GITHUB_TOKEN needs no scopes.
+    permissions: {}
     steps:
-      # yamllint disable-line rule:line-length
-      - name: Get conclusion
-        # yamllint disable-line rule:line-length
-        uses: im-open/workflow-conclusion@8eac7f17381a6917bc04fec3e2c92e70ebc37526  # v3.0.0
       - name: Set vote
         # yamllint disable-line rule:line-length
         uses: lfreleng-actions/gerrit-review-action@264fe205361cbb2ee8f26280998a75680ee33b53  # v1.3.0
@@ -147,4 +143,11 @@ jobs:
           known_hosts: ${{ vars.GERRIT_KNOWN_HOSTS }}
           gerrit-change-number: ${{ inputs.GERRIT_CHANGE_NUMBER }}
           gerrit-patchset-number: ${{ inputs.GERRIT_PATCHSET_NUMBER }}
-          vote-type: ${{ env.WORKFLOW_CONCLUSION }}
+          # Read each needed job's result directly. The workflow-conclusion
+          # action read the jobs API, which can still list finished jobs
+          # as running; it then fell back to 'skipped', a vote type
+          # gerrit-review-action rejects.
+          vote-type: >-
+            ${{ contains(needs.*.result, 'failure') && 'failure'
+                || contains(needs.*.result, 'cancelled') && 'cancelled'
+                || 'success' }}
