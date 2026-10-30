@@ -18,6 +18,12 @@
 # The merge de-duplicates, so an entry may appear in both files while
 # it migrates from one to the other.
 
+# Sphinx redoc extension (sphinxcontrib-redoc); policy/parent sets
+# redoc_uri to the bundle at https://cdn.redoc.ly/redoc/latest/, which
+# the extension downloads when the build finishes. Blocking it failed
+# every policy/parent documentation build.
+cdn.redoc.ly:443
+
 # Container registry (Nordix); ONAP integration tests pull
 # onaptest/postgres from here via Testcontainers. It sits outside
 # docker.pull.registry, so the Nexus3 entries do not cover it.
