@@ -86,7 +86,7 @@ jobs:
     permissions:
       contents: read
     # yamllint disable-line rule:line-length
-    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@ac482902ade7c19fa868588336b455d13409562c  # v0.0.4
+    uses: lfreleng-actions/docs-workflows/.github/workflows/docs-build.yaml@688e4554196b882a96e9eae606f8108b3abd68c8  # v0.1.3
     with:
       mode: 'merge'
       # A merged change builds from the branch, not from a change ref.
