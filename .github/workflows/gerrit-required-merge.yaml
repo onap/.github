@@ -95,6 +95,10 @@ jobs:
       gerrit_project: ${{ inputs.GERRIT_PROJECT }}
       gerrit_branch: ${{ inputs.GERRIT_BRANCH }}
       # gerrit_url falls back to the GERRIT_URL organisation variable.
+      # ONAP-only egress endpoints, merged with the lfreleng-actions
+      # baseline. Pinned: bump this ref when the list changes.
+      # yamllint disable-line rule:line-length
+      harden_runner_supplemental_allowlist: 'onap//.github/harden-runner/onap/allow_list.txt@fad6e762d5838d3ed91bb5d2fdfbbbd943819d13'
     secrets:
       RTD_TOKEN: ${{ secrets.RTD_TOKEN }}
 
